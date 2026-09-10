@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Formulir Pendaftaran Ekstrakurikuler</title>
+</head>
+<body>
+
+<h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+
+<form>
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <td>Nama Lengkap</td>
+        <td><input type="text" name="nama"></td>
+    </tr>
+    <tr>
+        <td>NIS (Nomor Induk Siswa)</td>
+        <td><input type="number" name="nis"></td>
+    </tr>
+    <tr>
+        <td>Kelas</td>
+        <td><input type="text" name="kelas"></td>
+    </tr>
+    <tr>
+        <td>Tanggal Lahir (DD-MM-YYYY)</td>
+        <td><input type="date" name="tanggal_lahir"></td>
+    </tr>
+    <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+            <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+        </td>
+    </tr>
+    <tr>
+        <td>Pilihan Ekstrakurikuler</td>
+        <td>
+            <input type="checkbox" name="ekskul" value="Pramuka"> Pramuka<br>
+            <input type="checkbox" name="ekskul" value="PMR"> PMR<br>
+            <input type="checkbox" name="ekskul" value="KIR"> KIR<br>
+            <input type="checkbox" name="ekskul" value="Paskibra"> Paskibra<br>
+            <input type="checkbox" name="ekskul" value="Seni Tari"> Seni Tari<br>
+            <input type="checkbox" name="ekskul" value="Musik"> Musik
+        </td>
+    </tr>
+    <tr>
+        <td>Alamat Email</td>
+        <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+        <td>Nomor Telepon</td>
+        <td><input type="number" name="telepon"></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="right">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+</form>
+
+</body>
+</html>
