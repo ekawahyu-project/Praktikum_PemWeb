@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Formulir Pendaftaran Ekstrakurikuler</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen py-10 px-4">
+
+<div class="max-w-xl mx-auto">
+
+    <h1 class="text-2xl font-bold text-slate-800 mb-6 text-center">
+        Formulir Pendaftaran Ekstrakurikuler
+    </h1>
+
+    <form id="formEkskul" class="bg-white rounded-xl shadow-md p-6 space-y-4">
+
+        <div>
+            <label for="nama" class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+            <label for="nis" class="block text-sm font-medium text-slate-700 mb-1">NIS (Nomor Induk Siswa)</label>
+            <input type="number" name="nis" id="nis"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+            <label for="kelas" class="block text-sm font-medium text-slate-700 mb-1">Kelas</label>
+            <input type="text" name="kelas" id="kelas"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+            <label for="tanggal_lahir" class="block text-sm font-medium text-slate-700 mb-1">Tanggal Lahir</label>
+            <input type="date" name="tanggal_lahir" id="tanggal_lahir"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+            <span class="block text-sm font-medium text-slate-700 mb-1">Jenis Kelamin</span>
+            <label class="inline-flex items-center mr-4">
+                <input type="radio" name="jenis_kelamin" value="Laki-laki" class="mr-1"> Laki-laki
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="jenis_kelamin" value="Perempuan" class="mr-1"> Perempuan
+            </label>
+        </div>
+
+        <div>
+            <span class="block text-sm font-medium text-slate-700 mb-1">Pilihan Ekstrakurikuler</span>
+            <div class="grid grid-cols-2 gap-1">
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="Pramuka" class="mr-1"> Pramuka</label>
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="PMR" class="mr-1"> PMR</label>
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="KIR" class="mr-1"> KIR</label>
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="Paskibra" class="mr-1"> Paskibra</label>
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="Seni Tari" class="mr-1"> Seni Tari</label>
+                <label class="inline-flex items-center"><input type="checkbox" name="ekskul" value="Musik" class="mr-1"> Musik</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Alamat Email</label>
+            <input type="email" name="email" id="email"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div>
+            <label for="telepon" class="block text-sm font-medium text-slate-700 mb-1">Nomor Telepon</label>
+            <input type="number" name="telepon" id="telepon"
+                   class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <div class="flex justify-end gap-2 pt-2">
+            <input type="reset" value="Reset"
+                   class="px-4 py-2 rounded-md border border-slate-300 text-slate-700 hover:bg-slate-50 cursor-pointer">
+            <input type="submit" value="Kirim"
+                   class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 cursor-pointer">
+        </div>
+
+    </form>
+
+    <div id="kartuAnggota" class="mt-6"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
