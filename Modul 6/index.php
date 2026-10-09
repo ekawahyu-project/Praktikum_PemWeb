@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="process.php" method="action">
-        <input type="text" name="nama">
-        <input type="submit" value="Go">
+    <form action="proces02.php" method="post" name="input">
+        Nama Anda: <input type="text" name="nama" required>
+        <br>
+        <input type="submit" name="input" value="input">
     </form>
 </body>
 </html>
