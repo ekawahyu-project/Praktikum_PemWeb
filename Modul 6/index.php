@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="proces02.php" method="post" name="input">
-        Nama Anda: <input type="text" name="nama" required>
-        <br>
-        <input type="submit" name="input" value="input">
+    <form enctype="multipart/form-data" action="upload.php" method="post">
+        Choose a file to upload:
+        <input name="uploadedfile" type="file" /> <br>
+        <input type="submit" value="Upload File" />
     </form>
 </body>
 </html>
