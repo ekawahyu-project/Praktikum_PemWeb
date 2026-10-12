@@ -1,8 +1,6 @@
 <?php
-$str = 'BAPAK PRESIDEN JOKO WIDODO';
-
-$kecil = strtolower($str);
-$hasil = ucwords($kecil);
-
-echo $hasil;
-?>
+$someWords = "Please don't blow me to pieces.";
+$wordChunks = explode(" ", $someWords);
+for($i = 0; $i < count($wordChunks); $i++){
+echo "Piece $i = $wordChunks[$i] <br>";
+}
