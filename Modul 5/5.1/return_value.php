@@ -1,5 +1,5 @@
 <?php
-function myfunction(): string
+function myfunction(): int
 {
     return 'ten';
 }
